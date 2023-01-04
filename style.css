@@ -1,115 +1,549 @@
-* {
-    border: 1px solid red;
-}
+/********************************************* format IPhone13 pro max **********************************************/
 
 
-body {
+
+@media (min-width: 428px) {
+  body {
     margin: 0;
     padding: 0;
-    Width: 428px;
-    Height: 2513px;
-}
+  }
+
+  /*********************************************header***********************************************/
 
 
-nav {
-   
-    background-color: #5B359D;
-  
-}
+  /* Barre de navigation header avec div1 au dessus de div2 */
+  nav {
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.span__header{
+  /* barre de navigation fond mauve avec logo entreprise + titre + menu burger au dessus de la deuxième partie de la barre de navigation (acceuil et contact */
+  .div1__nav {
     width: 100%;
     height: 76px;
     display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
-	align-content: center;
-}
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #5B359D;
+  }
 
-header h2{
-    /* font-family: ari; */
-    font-style: italic;
+  .logo__div1 {
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 45px;
+  }
+
+  .title__div1 {
+    margin-top: 40px;
+    margin-left: -30px;
+    font-family: 'Comic Neue', sans-serif;
+    color: white;
     font-weight: 400;
     font-size: 26px;
-    line-height: 36px;
-    color: #FFFFFF;
-    width:60%;
-    padding:0;
-    margin:0;
+    font-style: italic;
+  }
+
+
+  /* barre de navigation fond blanc avec bouton acceuil et contact  au dessus de la première partie de la barre de navigation */
+  .div2__nav {
+    width: 100%;
+    height: 100px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* boutons barre de navigation acceuil et contact */
+  button {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 35px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+    cursor: pointer;
+    font-family: 'roboto', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+  }
+
+
+  /*  image du site dans le header */
+  .img__header {
+    background-image: url('./asset/imagework.jpg');
+    padding: 0;
+    margin: 0;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  /*********************************************main***********************************************/
+
+
+
+  .title1__main {
+    padding: auto;
+    margin: 7%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.481);
+    font-family: 'roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  /* position des éléments sections graphisme, strategie, illustrations en flex */
+
+  .graphisme__main,
+  .strategie__main,
+  .illustrations__main {
+    margin: 5%;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* style des logos des éléments de sections graphisme, stategie, illustrations */
+  .logo__strategie,
+  .logo__illustrations,
+  .logo__graphisme {
+    width: 90px;
+    height: auto;
+    margin: auto;
+    padding: auto;
+  }
+
+  /* style des titres des éléments de sections graphisme, stategie, illustrations */
+  .title__strategie,
+  .title__illustrations,
+  .title__graphisme {
+    padding: auto;
+    margin: 5%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0, 0);
+    font-family: 'roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  /* style des paragraphes des éléments de sections graphisme, stategie, illustrations */
+  .paragraphe__strategie,
+  .paragraphe__illustrations,
+  .paragraphe__graphisme {
+    padding: auto;
+    margin: 2%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0, 0);
+    font-family: 'roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+
+  /* style du texte bas du menu */
+  .title2__textfin {
+    padding: auto;
+    margin: 10%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.400);
+    font-family: 'roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+
+  /* style du texte signature propriétaite */
+  .signature__textfin {
+    padding: auto;
+    margin: 7%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.29);
+    font-family: 'roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+
+  /*********************************************footer***********************************************/
+
+  /* organisation des éléments du footer en flex et couleur de fond mauve */
+  footer {
+    background-color: #5B359D;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+.div__footer {
+  margin: 0 0 20px 0;
 }
 
-.title__header{
-text-align: center;
+  /* titre du footer */
+  .title1__footer {
+   width: 360px;;
+    height: 45px;
+    margin: 0px auto 0px auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  /* logos du footer twitter, facebook, instagram */
+  .logos__footer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+
+  }
+
+  /* organisation des éléments accés rapide & rgpd & coordonnées*/
+  .text__footer {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 20px;
+    padding: 0;
+  }
+
+  .titleh5__footer {
+    margin: 0 0 0 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.504);
+    font-size: 1rem;
+    font-family: 'roboto', sans-serif;
+  }
+
+  .listaccess__footer,
+  .rgpd__footer {
+    margin: 10px 0 0 0;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'roboto', sans-serif;
+  }
+
+  .adress__footer {
+    margin: 20px 0 30px 40px;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'roboto', sans-serif;
+  }
+
+  .adress__footer {
+    margin: 10px 0 0 0;
+  }
 }
 
-header span img{
-   color: rgb(255, 255, 255);
-   height: 30px;
-   width: 30px;
-   border:0;
-   padding: 0;
-   margin: 0;
+
+
+/*********************************************format IPad pro 11" **********************************************/
+
+
+
+@media (min-width: 834px) {
+
+  /* Barre de navigation header avec div1 au dessus de div2 */
+  nav {
+    height: 76px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  /* barre de navigation fond mauve avec logo entreprise + titre + menu burger au dessus de la deuxième partie de la barre de navigation (acceuil et contact */
+  .div1__nav {
+
+    width: 50%;
+    height: 76px;
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .logo__div1 {
+    margin: 0 0 0 50px;
+  }
+
+  .title__div1 {
+    margin: 0 60px 0 0;
+  }
+
+  /* disparition du menu burger */
+  .burger__div1 {
+    display: none;
+  }
+
+
+  /* barre de navigation fond blanc avec bouton acceuil et contact  au dessus de la première partie de la barre de navigation */
+  .div2__nav {
+    padding: 0;
+    width: 50%;
+    height: 76px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* boutons barre de navigation acceuil et contact */
+  button {
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .img__header {
+
+    height: 600px
+  }
+
+  /*********************************************main***********************************************/
+
+
+
+  .title1__main {
+    padding: auto;
+    margin: 10%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.481);
+    font-family: 'roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+
+  }
+
+
+  /* position des éléments sections graphisme, strategie, illustrations en flex */
+
+  .divmain__main {
+
+    padding: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .strategie__main,
+  .illustrations__main,
+  .graphisme__main {
+    padding: 0;
+    margin: 0 0 30px 0;
+    width: 414px;
+  }
+
+  .paragraphe__graphisme,
+  .paragraphe__illustrations,
+  .paragraphe__strategie {
+    padding: 0 20px 0 20px;
+  }
+
+  /* repositionnement et alignement  de l'élément logo de la section illustration */
+  .logo__illustrations {
+    margin: 0 0 04% 38%;
+  }
+
+  .title2__textfin {
+    width: 500px;
+    padding: auto;
+    margin: 80px auto 0 auto;
+  }
+
+  /*********************************************footer***********************************************/
+
+  footer {
+    display: flex;
+    justify-content: flex-end;
+    height: 264px;
+    background-size: cover;
+  }
+
+  .div__footer {
+    margin: 25px 0 0 0;
+    height: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title1__footer {
+   width: 100%;
+    height: 30px;
+    margin: 0px auto 12px auto;
+    text-align: center;
+  }
+
+  .logos__footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 150px 15px 150px;
+
+
+  }
+
+  /* organisation des éléments accés rapide & rgpd & coordonnées*/
+  .text__footer {
+    width: 650px;
+    margin: 0 auto 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+  }
+
+
+  .adress__footer {
+    margin: 20px 0 0 0;
+  }
+
+
 }
 
 
 
 
 
+/*********************************************format Desktop 1440 x 1621 px **********************************************/
+
+
+@media (min-width: 1440px) {
+
+  /* Barre de navigation header avec div1 au dessus de div2 */
+  nav {
+    height: 76px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  /* barre de navigation fond mauve avec logo entreprise + titre + menu burger au dessus de la deuxième partie de la barre de navigation (acceuil et contact */
+  .div1__nav {
+
+    width: 30%;
+    height: 76px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .logo__div1 {
+    margin: 0 0 0 50px;
+  }
+
+  .title__div1 {
+    margin: 0 60px 0 0;
+  }
+
+  /* disparition du menu burger */
+  .burger__div1 {
+    display: none;
+  }
+
+
+  /* barre de navigation fond blanc avec bouton acceuil et contact  au dessus de la première partie de la barre de navigation */
+  .div2__nav {
+    padding: 0;
+    width: 50%;
+    height: 76px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* boutons barre de navigation acceuil et contact */
+  button {
+    margin: 0;
+    padding: 0;
+  }
 
 
 
+  /*********************************************main***********************************************/
+
+  .title1__main {
+    width: 900px;
+    padding: auto;
+    margin: 7% auto 3% auto;
+  }
+
+
+  /* position des éléments sections graphisme, strategie, illustrations en flex */
+
+  .divmain__main {
+
+    padding: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 5%;
+  }
+
+  /* repositionnement et alignement  de l'élément logo de la section illustration */
+  .logo__illustrations {
+    margin: 0 0 04% 38%;
+  }
+
+  /* repositionnement section extefin axe vertical */
+  .textfin__main {
+
+    margin-bottom: 2%;
+  }
+
+
+  /* repositionnement et alignement du title2 textefin */
+  .title2__textfin {
+
+    width: 750px;
+  }
+
+  /* repositionnement textefin axe vertical */
+  .signature__textfin {
+    margin: 2% 0 0 0;
+  }
 
 
 
+  /*********************************************footer***********************************************/
 
+  footer {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+.div__footer {
+margin: 0 0 0 0;
 
+}
+  /* logos du footer twitter, facebook, instagram */
+  .logos__footer {
+    width: 350px;
+    height: 24%;
+    margin: 5px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Rectangle 4 
-
-position: absolute;
-width: 45px;
-height: 27.14px;
-left: 20px;
-top: 24.13px;
-
-background: url(Slice 1.png);
-/* Mon petit graphisme 
-
-position: absolute;
-width: 249px;
-height: 21.71px;
-left: 81px;
-top: 25.33px;
-
-font-family: 'Comic Sans MS';
-font-style: italic;
-font-weight: 400;
-font-size: 26px;
-line-height: 36px;
-
-color: #FFFFFF;*/
+  /* organisation des éléments accés rapide & rgpd & coordonnées*/
+  .text__footer {
+    width: 100%;
+    height: 100%;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+  }
+}

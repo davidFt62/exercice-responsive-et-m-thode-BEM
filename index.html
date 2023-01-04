@@ -1,35 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Roboto&display=swap" rel="stylesheet">
+
     <title>Exercice - Responsive et Méthode BEM</title>
 </head>
+
 <body>
+
     <header>
-        <nav>
-            <span class="span__header">
-                <img  src="asset/logolosange.png" alt="logo losange">
-               <h2 class="title__header">Mon petit graphique</h2> 
-               <a class="burger__header" href="menu__header"><img src="asset/icons8-menu-rounded-50.png" alt=" icon menu"></a>
-            </span>
+        <!-- header avec une nav contenant un logo + un titre"Mon petit graphique" + burger pour le menu + une nav contenant un bouton accueil et un bouton contact + une image principale-->
+
+        <nav class="nav__header">
+            <!-- div à gauche pour formats tablette et en vue laptop + desktop et toute la largeur pour format mobile first -->
+
+            <div class="div1__nav">
+                <!-- logo entrrprise-->
+                <img class="logo__div1" src="asset/logolosange.png" alt="logo losange">
+                <!-- titre de nav font: comic neue (ancien sans ms); weight: 400; size: 26px; style: italic-->
+                <h2 class="title__div1">Mon petit graphisme</h2>
+                <!-- icone burger pour menu burger -->
+                <a class="burger__div1" href="menu__header"><img src="asset/menu.png" alt=" icon menu"></a>
+            </div>
+
+            <!-- div à droite pour formats tablette et en vue laptop + desktop et toute la largeur pour format mobile first -->
+            <!-- bouton acceuil et contact; Width: 67px; Height: 22px; Top: 132px; Left:43px;
+                font: roboto; weight: 400; size: 19px -->
+            <div class="div2__nav">
+                <a class="acceuil__button" href="index2.html"><button>Acceuil</button></a>
+                <a class="contact__button" href="index3.html"><button>contact</button></a>
+            </div>
+
+
         </nav>
 
-    
+        <section class="img__header"></section>
+
     </header>
-    
-    
+
+
     <main>
+        <!-- titre principal; Font: Roboto; Weight: 400; Size: 1.2rem -->
+        <section class="title1__main">
+            <h1>Mon petit graphisme est une agence de graphisme qui aide les entreprises à créer des
+                visuels attractifs.</h1>
+        </section>
 
+        <div class="divmain__main">
+
+            <section class="graphisme__main">
+                <!-- logo graphisme  -->
+                <img class="logo__graphisme" src="asset/logo graphisme.png" alt="logo graphisme">
+
+                <!-- titre graphisme:  Font: Roboto; Weight: 400; Size: 2rem couleur 50%-->
+                <h3 class="title__graphisme">GRAPHISME</h3>
+
+                <!-- paragraphe graphisme:  Font: Roboto; Weight: 400; Size: 1.1 -->
+                <p class="paragraphe__graphisme">Que vous ayez besoin de graphisme pour un site web, des cartes de
+                    visite ou des affiches, nous réalisons des visuels dont vous serez fiers.</p>
+            </section>
+
+            <section class="strategie__main">
+                <!-- logo stratégie -->
+                <img class="logo__strategie" src="asset/logo stratégie.png" alt="logo stratégie">
+
+                <!-- titre stratégie:  Font: Roboto; Weight: 400; Size: 2rem -->
+                <h3 class="title__strategie">STRATÉGIE</h3>
+
+                <!-- paragraphe stratégie:  Font: Roboto; Weight: 400; Size: 1.1rem -->
+                <p class="paragraphe__strategie">Plutôt que de suggérer des graphismes à la mode, nous prenons le temps
+                    de comprendre vos objectifs et nous nous adaptons à vos besoins.</p>
+            </section>
+
+            <section class="illustrations__main">
+                <!-- logo illustrations -->
+                <img class="logo__illustrations" src="asset/logo illustrations.png" alt="logo graphisme">
+
+                <!-- titre illustrations:  Font: Roboto; Weight: 400; Size: 2rem -->
+                <h3 class="title__illustrations">ILLUSTRATIONS</h3>
+
+                <!-- paragraphe illustrations:  Font: Roboto; Weight: 400; Size: 1.1 -->
+                <p class="paragraphe__illustrations">Nos graphistes vous proposerons des illustrations 100 % originales.
+                </p>
+            </section>
+        </div>
+        <section class="textfin__main">
+            <!-- titre2 Font: Roboto; Weight: 700; Size: 1.6rem couleur:40%-->
+            <h2 class="title2__textfin">“Mon petit graphisme est une excellente agence de graphisme. Les graphistes
+                sont, à l’écoute des besoins et m’ont permis de renouveler complétement la carte de mon restaurant.”
+            </h2>
+
+            <!-- signature propriétaire Font: Roboto; Weight: 500; Size: 1.4rem couleur 40%-->
+            <h3 class="signature__textfin">Amandine, restauratrice</h3>
+        </section>
     </main>
-
+    
 
 
     <footer>
+        <!-- titre footer font: robot; weight: 700; size: 15px; color; #fffff-->
+        <div class="div__footer">
 
+            <section class="title1__footer">
+                <h4> Mon petit graphisme - Agence de graphisme basée à Paris</h4>
+            </section>
 
+            <section class="logos__footer">
+                <!-- logo twitter -->
+                <a class="logottwitter__footer" href="twitter.html"><img src="asset/logo twitter.png"
+                        alt="logo twitter"></a>
+                <!-- logo facebook -->
+                <a class="logofacebook__footer" href="facebook.html"><img src="asset/logo facebook.png"
+                        alt="logo facebook"></a>
+                <!-- logo instagram -->
+                <a class="logoinstagram__footer" href="instagram.html"><img src="asset/icon instagram.png"
+                        alt="logo instagram"></a>
+            </section>
+
+            <!-- section accès rapides liste sans numérotation -->
+
+            <!-- spans accés rapide & rgpd & coordonnées==> font robot; color: #fffff (titre color:#fffff 50%); weight: 700; size: 1.4rem-->
+            <section class="text__footer">
+
+                <span class="access__footer">
+
+                    <h5 class="titleh5__footer">Accès rapide</h5>
+                    <ul class="listaccess__footer">
+                        <li>Acceuil <a href="index2.html"></a></li>
+                        <li>Contact <a href="index3.html"></a></li>
+                    </ul>
+                </span>
+
+                <span class="rgpd__footer">
+                    <h5 class="titleh5__footer">A propos</h5>
+                    <ul class="listrgpd__footer">
+                        <li>Données personnelles <a href="index4.html"></a></li>
+                        <li>Mentions légales <a href="index5.html"></a></li>
+                        <li>Cookies <a href="index6.html"></a></li>
+                    </ul>
+                </span>
+
+                <span class="coordon__footer">
+                    <h5 class="titleh5__footer">Coordonnées</h5>
+                    <p class="adress__footer"> 10 Quai de la Charente<br> 75019 Paris<br> 01 23 45 67 89</p>
+                </span>
+            </section>
+        </div>
     </footer>
+
 </body>
+
 </html>
